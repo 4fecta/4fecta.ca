@@ -1,18 +1,15 @@
 ---
-title: Colophon
+title: About
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+excerpt: Hello!
 comments: false
 ---
 
-He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
+Hey, this is Edward. Sophomore at the University of Toronto Schools. I don't think my English vocabulary is large enough to describe my passion for mathematics and programming. Whether it's the feeling of finally working out the key steps to a complex mathematical proof, or designing the various intricacies of sophisticated algorithms, I simply can't get enough of it. You can check out some of my profiles on various websites, such as [DMOJ](https://dmoj.ca/user/4fecta) or [Codeforces](https://codeforces.com/profile/4fecta). I also enjoy crafting up various problems and challenges in both math and programming, and I truly hope my creations are able to inspire some fun and challenging thinking for whoever they may entertain. A lot of my algorithmic creations are hosted on DMOJ, and I will share any miscellaneous problems in my blog.
 
-If you have a question about him or else, just send a letter to him.
+<hr>
 
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
+Outside of doing nerdy things, I also enjoy watching anime, and I've been working on learning the Japanese language to eventually be able to read light novels (maybe that's nerdy too, but it should be known that the best plot of many series are hidden behind untranslated pages of Japanese text 😛). Chess is a fun game too. My music taste has been completely dominated [by](https://youtu.be/YnSW8ian29w) [A](https://youtu.be/sOiMD45QGLs)[d](https://youtu.be/jg09lNupc1s)[o](https://youtu.be/Qp3b-RXtz4w), so theres that I guess.
 
-**may u needs ✨**
-
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+Man I love writing About pages.
