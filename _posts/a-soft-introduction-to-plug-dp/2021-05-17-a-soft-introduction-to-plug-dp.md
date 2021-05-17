@@ -26,5 +26,5 @@ Let's consider a concrete example to understand the concept of plug masks. Consi
 
 <figure>
 <img src="fig2.jpg" alt="figure 2">
-<figcaption>An possible tiling represented by the binary mask $$101010010$$</figcaption>
+<figcaption>An possible tiling represented by the binary mask 101010010</figcaption>
 </figure>
