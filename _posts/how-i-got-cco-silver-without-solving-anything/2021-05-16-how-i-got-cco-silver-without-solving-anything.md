@@ -14,6 +14,6 @@ The first fault in my approach at CCO. I had some initial ideas early on, scorin
 
 ### P3. Through Another Maze Darkly
 
-I had a quick glance over problem 2, but decided that the subtasks from problem 3 were a lot more approachable. Really, my goal here was to snatch whatever I can and rush back to problem 1 where I had the most potential points yet to be earned. A quick program that printed the path given by a random line graph revealed the pattern of $1-x-1-y-1-...-1-N-1-N-...$, for which the first idea that came to mind was binary search. This was the smoothest subtask of day 1 for me, taking only around 20 minutes of time in total.
+I had a quick glance over problem 2, but decided that the subtasks from problem 3 were a lot more approachable. Really, my goal here was to snatch whatever I can and rush back to problem 1 where I had the most potential points yet to be earned. A quick program that printed the path given by a random line graph revealed the pattern of $ 1-x-1-y-1-...-1-N-1-N-... $, for which the first idea that came to mind was binary search. This was the smoothest subtask of day 1 for me, taking only around 20 minutes of time in total.
 
 ### P2. Weird Numeral System
