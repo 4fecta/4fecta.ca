@@ -18,4 +18,4 @@ I had a quick glance over problem 2, but decided that the subtasks from problem 
 
 ### P2. Weird Numeral System
 
-$$ test $$
+This problem was intimidating at first, with no clear idea on how to proceed. Again, I was simply controlling the damage of my poor problem 1 performance here, so I was only aiming for the subtask. The subtask provided the constraint that the absolute value of any allowed digit is less than the base, which intuitively meant that any change caused by a higher base couldn't be reverted by lower bases, no matter what values we assign them. This inspired a brute force recursion in descending order of power, ensuring that the number is in the range $$ (-b^K, b^K) $$ when we are done with the $$K$$-th power (of course, $$b$$ denotes the given base here).
