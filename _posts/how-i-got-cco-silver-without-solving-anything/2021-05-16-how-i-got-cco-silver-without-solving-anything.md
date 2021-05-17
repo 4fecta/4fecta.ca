@@ -42,4 +42,8 @@ This goes first since it was the problem I eliminated first. After reading all t
 
 ### P1. Travelling Merchant
 
-I invested a fair amount of time into this problem. My first impressions were "oh hey, I finally found the template free easy Tarjan's problem" that previous CCOs all had (at least, some variation of a template problem). However, the problem quickly managed to shove my words back into my mouth as I ponder the details for around an hour (hint, it wasn't Tarjan's at all). 
+I invested a fair amount of time into this problem. My first impressions were "oh hey, I finally found the template free easy Tarjan's problem" that previous CCOs all had (at least, some variation of a template problem). However, the problem quickly managed to shove my words back into my mouth as I pondered the details for around 30 minutes (hint, it wasn't Tarjan's at all). Keeping an open mind, I changed to an approach relying on Dijkstra's algorithm which managed to almost pass the first batch after some debugging. As it turned out, replacing the Dijkstra with a simple BFS allowed my solution to pass subtask 1 in the exact 1 second of allotted time, of course with some flimsy break statements attached as well. I couldn't find any easy optimizations with multisource BFS that would lead to a full solution, so I decided to move on to the next problem. I was quite shocked to learn after the contest that simply switching the BFS to a DFS and applying memoization was enough for full marks, but I guess that's just how it is sometimes :)
+
+### P2. Bread First Search
+
+For this problem, the observation of partitioning the nodes into some blocks of equal distances was immediately apparent, and a naive $$\mathcal{O}(N^3)$$ solution soon followed. 
