@@ -71,24 +71,30 @@ Our base case will be $$dp[0][M][0] = 1$$, and you can see how this easily fits 
 
 ### Implementation
 
-You can find my implementation for the procedure described above. Here, I take all values modulo `MOD` since the number of tilings grows rapidly for larger $$N$$ and $$M$$. The time complexity is $$\mathcal{O}(NM2^{M+1})$$, which means we can solve the problem for $$N, M \le 20$$ with ease.
+Here, you can find my implementation for the procedure described above. I take all values modulo `MOD` since the number of tilings grows rapidly for larger $$N$$ and $$M$$. The time complexity is $$\mathcal{O}(NM2^{M+1})$$, which means we can solve the problem for $$N, M \le 20$$ with ease.
 
 {% highlight cpp %}
 cin >> n >> m;
-int full = (1 << (m + 1)) - 1;
-dp[0][m][0] = 1;
+int full = (1 << (m + 1)) - 1; //the maximum possible mask with all m+1 bits set
+dp[0][m][0] = 1; //base case
 for (int i = 1; i <= n; i++) {
-    for (int msk = 0; msk <= full; msk++) dp[i][0][msk << 1] += dp[i - 1][m][msk];
+    for (int msk = 0; msk <= full; msk++) dp[i][0][msk << 1] += dp[i - 1][m][msk]; //transfer data from row i-1 to i
     for (int j = 1; j <= m; j++) {
         for (int msk = 0; msk <= full; msk++) {
-            int rit = msk & (1 << (j - 1)), dwn = msk & (1 << j);
-            if (!rit && !dwn) {
+            int rit = msk & (1 << (j - 1)), dwn = msk & (1 << j); //right and down plug from (i, j-1) respectively
+            if (!rit && !dwn) { //case 1
                 dp[i][j][msk ^ (1 << j)] += dp[i][j - 1][msk] % MOD; //place right domino
                 dp[i][j][msk ^ (1 << (j - 1))] += dp[i][j - 1][msk] % MOD; //place down domino
-            } else if (rit && !dwn) dp[i][j][msk ^ (1 << (j - 1))] += dp[i][j - 1][msk] % MOD;
-            else if (!rit && dwn) dp[i][j][msk ^ (1 << j)] += dp[i][j - 1][msk] % MOD;
+            } else if (rit && !dwn) dp[i][j][msk ^ (1 << (j - 1))] += dp[i][j - 1][msk] % MOD; //case 2
+            else if (!rit && dwn) dp[i][j][msk ^ (1 << j)] += dp[i][j - 1][msk] % MOD; //case 3
         }
     }
 }
-printf("%d\n", dp[n][m][0] % MOD);
+printf("%d\n", dp[n][m][0] % MOD); //final answer
 {% endhighlight %}
+
+### Closing Remarks
+
+And that was a quick overview of Plug DP! With a firm grasp on the concepts we can easily extend this to a variety of other small grid problems, whether it be about domino tilings or counting circuits in a grid. As a small exercise, try solving the problem above when some of the given cells are blocked, or try solving it for when it does not have to be a full tiling. Anyways, that's all for now.
+
+Ciao 👋
