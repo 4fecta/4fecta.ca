@@ -24,4 +24,17 @@ This problem was intimidating at first, with no clear idea on how to proceed. Ag
 
 It was only here that I decided it may be a good idea to reread the statement, and discovered that contrary to my belief that $$Q = 100\;000$$, the constraints actually had $$Q = 1\;000\;000$$! A quick 1 line fix to my `MQ` constant resolved the `WA` verdict, but replaced it with the ever so agonizing `TLE` instead. As there were only 30 minutes left at this point, I decided it would be futile to search for new solutions and settled with constant optimizing my square root log. I spammed around 20 different versions of the same code with different block sizes and with/without `pragma` optimizations, but none of them made it through the last batch. In the last 10 minutes I tried to cheese the time limit by handling numbers with small frequencies separately but that was to no avail either, and the timer hit 0 with only 11 points on problem 1, a problem I dedicated over 3 hours of contest time to.
 
+### Reflections
+
+Clearly, my strategy of tunnel visioning on problem 1 did not work out in my favour at all. Spending over 3 out of 4 hours of such an important contest for 11 points is something that would pain anyone to see, and I was quite sad over my mediocre day 1 performance. If there is one lesson to be learned out of my CCO experience this year, it would be to *read the constraints, and read them carefully*. Also, repeatedly submitting `WA` submissions or trying to fast-slow for over 30 minutes was just a waste of time, time that could have well been spent going for more partials on problem 3 or even a full solve on problem 2. Finally, it may have been wiser to try and optimize out the log factor from my code instead of spamming flimsy `pragma`s and cheeses, something that seems more than possible with 30 minutes in hindsight. Regardless, I could not redo what had already been done, and it was time to get well rested and prepare for day 2.
+
+## Day 2
+
+### Preparations
+
+My mindset going into day 2 was to mainly control the damage that had been done on day 1. My lousy day 1 performance had already eliminated any chances of going for gold, so it was time to work on securing that silver. I did a mock CCO contest the day before, just to practice waking up, getting into contest mindset, and not choking or getting stuck on any particular problem for too long.
+
+### P3. Loop Town
+
+This goes first since it was the problem I eliminated first. After reading all the problem statements right off the bat, problem 3 already seemed concerningly difficult. The best I could come up with was some 2-SAT approach based on clockwise or counterclockwise travel, but the dependencies and conditions simply did not work out. After fiddling with it for a bit longer, I decided that this was probably the killer problem of CCO 2021, and dropped it completely (of course, the first subtask being worth 12 points helped with that realization as well). Back to the other two.
 
