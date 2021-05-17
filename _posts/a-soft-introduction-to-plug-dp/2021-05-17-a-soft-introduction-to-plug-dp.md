@@ -28,3 +28,7 @@ Let's consider a concrete example to understand the concept of plug masks. Consi
 <img src="fig2.jpg" alt="figure 2">
 <figcaption>A possible tiling represented by the binary mask 101010010</figcaption>
 </figure>
+
+### Transitions
+
+In general, we want to transition from cell $$(i, j - 1)$$ to cell $$(i, j)$$ (i.e. across each row). Notice that the only 2 plugs change locations when we move horizontally, which is the main reason why Plug DP ends up being so powerful. Specifically, if we number the plugs from $$0$$ to $$M+1$$, then only plugs $$j-1$$ and $$j$$ change locations. Specifically, $$j-1$$ goes from the vertical plug in the previous state to a horizontal plug in the next, while $$j$$ goes from a horizontal plug to the vertical plug. It is convenient to note that if we $$1$$-index the columns and $$0$$-index the plugs, then plug $$j$$ will always be the vertical plug when considering a state at column $$j$$.
