@@ -79,7 +79,7 @@ int full = (1 << (m + 1)) - 1; //the maximum possible mask with all m+1 bits set
 dp[0][m][0] = 1; //base case
 for (int i = 1; i <= n; i++) {
     for (int msk = 0; msk <= full; msk++) dp[i][0][msk << 1] += dp[i - 1][m][msk]; //transfer data from row i-1 to i
-    for (int j = 1; j <= m; j++) {
+for (int j = 1; j <= m; j++) {
         for (int msk = 0; msk <= full; msk++) {
             int rit = msk & (1 << (j - 1)), dwn = msk & (1 << j); //right and down plug from (i, j-1) respectively
             if (!rit && !dwn) { //case 1
