@@ -62,3 +62,33 @@ If you've been following along, you may be wondering how we go from one row to t
 <img src="fig4.jpg" alt="figure 4">
 <figcaption>Shifting rows</figcaption>
 </figure>
+
+As you may notice, the vertical plug $$0$$ on the next row shifts all the plug indices by 1, so we must shift all bits in the mask by 1 to compensate. Also, the vertical plugs here $$0$$ and $$M$$ should never be toggled since having a domino go outside the grid would be absurd, so we don't have to worry about the bit we lose from shifting or the new bit introduced.
+
+### Final details
+
+Our base case will be $$dp[0][M][0] = 1$$, and you can see how this easily fits in from the previous section. The final answer will be stored in $$dp[N][M][0]$$, since having any plugs toggled at that point would mean having a domino go outside of the grid. 
+
+### Implementation
+
+You can find my implementation for the procedure described above. Here, I take all values modulo `MOD` since the number of tilings grows rapidly for larger $$N$$ and $$M$$. The time complexity is $$\mathcal{O}(NM2^{M+1})$$, which means we can solve the problem for $$N, M \le 20$$ with ease.
+
+{% highlight cpp %}
+cin >> n >> m;
+int full = (1 << (m + 1)) - 1;
+dp[0][m][0] = 1;
+for (int i = 1; i <= n; i++) {
+    for (int msk = 0; msk <= full; msk++) dp[i][0][msk << 1] += dp[i - 1][m][msk];
+    for (int j = 1; j <= m; j++) {
+        for (int msk = 0; msk <= full; msk++) {
+            int rit = msk & (1 << (j - 1)), dwn = msk & (1 << j);
+            if (!rit && !dwn) {
+                dp[i][j][msk ^ (1 << j)] += dp[i][j - 1][msk] % MOD; //place right domino
+                dp[i][j][msk ^ (1 << (j - 1))] += dp[i][j - 1][msk] % MOD; //place down domino
+            } else if (rit && !dwn) dp[i][j][msk ^ (1 << (j - 1))] += dp[i][j - 1][msk] % MOD;
+            else if (!rit && dwn) dp[i][j][msk ^ (1 << j)] += dp[i][j - 1][msk] % MOD;
+        }
+    }
+}
+printf("%d\n", dp[n][m][0] % MOD);
+{% endhighlight %}
