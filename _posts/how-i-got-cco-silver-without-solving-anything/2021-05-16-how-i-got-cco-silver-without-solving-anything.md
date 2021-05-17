@@ -11,3 +11,7 @@ I would like to preface this by saying that you should not voluntarily attempt w
 ### Swap Swap Sort
 
 The first fault in my approach at CCO. I had some initial ideas early on, scoring the first 2 subtasks at around 16 minutes.
+
+# Testing out latex
+
+$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
