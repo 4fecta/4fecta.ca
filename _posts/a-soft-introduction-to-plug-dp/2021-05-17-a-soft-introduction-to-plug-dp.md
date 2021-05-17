@@ -8,6 +8,6 @@ tag:
 ---
 
 <figure>
-<img src="_posts/a-soft-introduction-to-plug-dp/fig1.jpg" alt="figure 1">
+<img src="fig1.jpg" alt="figure 1">
 <figcaption>What the state represents</figcaption>
 </figure>
