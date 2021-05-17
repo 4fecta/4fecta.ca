@@ -7,6 +7,8 @@ tag:
   - programming
 ---
 
+Testing.
+
 <figure>
 <img src="fig1.jpg" alt="figure 1">
 <figcaption>What the state represents</figcaption>
