@@ -13,7 +13,7 @@ So I realized that there are literally 0 resources written in English on Plug DP
 
 In short, Plug DP is a bitmasking technique that allows us to solve complicated problems with relatively simple states and transitions. To illustrate Plug DP in its most primitive form, let's visit a rather classical problem: **How many ways can we fully tile an $$N \times M$$ grid with $$1 \times 2$$ dominoes?**
 
-This problem can be solved with a standard row-by-row bitmasking approach, but the transitions for that DP state is annoying and unclear at best. Instead, let's investigate an approach that uses a slightly different state. Our state, $$dp[i][j][mask]$$, will represent the number of possible tilings of all cells in rows $$i-1$$ and earlier, and the first $$j$$ cells in row $$i$$, with a plug mask of $$mask$$. The first two dimensions are relatively straightforward, but what do I mean by "plug mask"?
+This problem can be solved with a standard row-by-row bitmasking approach, but the transitions for that DP state is annoying and unclear at best. Instead, let's investigate an approach that uses a slightly different state. Our state, $$dp[i][j][mask]$$, will represent the number of possible full tilings of all cells in rows $$i-1$$ and earlier, and the first $$j$$ cells in row $$i$$, with a plug mask of $$mask$$. The first two dimensions are relatively straightforward, but what do I mean by "plug mask"?
 
 ### The Plug Mask
 
@@ -40,6 +40,20 @@ In general, we want to transition from cell $$(i, j - 1)$$ to cell $$(i, j)$$ (i
 
 So how do we transition? First, we notice that if both plugs $$j-1$$ and $$j$$ are toggled from the previous state then it leads to an overlap of 2 dominoes on cell $$(i, j)$$, so we don't need to consider this case. Let's handle the other 3 cases separately.
 
-**Case 1:** none of $$j-1$$ and $$j$$ are toggled.
+**Case 1:** none of plug $$j-1$$ and $$j$$ are toggled.
 
-This means that $$(i, j)$$ does not have anything covering it, so we must place one end of a domino there to cover. We can either place a horizontal domino going from $$(i, j)$$ to $$(i, j+1)$$ toggling plug $$j$$, or we can place a vertical domino going from $$(i+1, j)$$ toggling plug $$j-1$$.
+This means that $$(i, j)$$ does not have anything covering it, so we must place one end of a domino there to cover. We can either place a horizontal domino going from $$(i, j)$$ to $$(i, j+1)$$ toggling plug $$j$$, or we can place a vertical domino going from $$(i, j)$$ to $$(i+1, j)$$ toggling plug $$j-1$$. Note that we cannot place a domino going to $$(i, j-1)$$ or $$(i-1, j)$$ since these cells are already occupied by the definition of our state.
+
+**Case 2:** only plug $$j-1$$ is toggled.
+
+This means that $$(i, j)$$ is already covered (by a domino going from $$(i, j-1)$$ to $$(i, j)$$), so all we have to do is untoggle plug $$j-1$$ and move on.
+
+**Case 3:** only plug $$j$$ is toggled.
+
+Extemely similar to the previous case, This means that $$(i, j)$$ is already covered (by a domino going from $$(i-1, j)$$ to $$(i, j)$$), so all we have to do is untoggle plug $$j$$ and move on.
+
+And that's really all there is! Now we just need to handle some special procedures and we are good to go.
+
+### Going from row $$i-1$$ to row $$i$$
+
+
