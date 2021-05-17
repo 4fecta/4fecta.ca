@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-08-29 09:29:20 +0700
-categories: jekyll update
+title:  "How I got CCO silver without solving anything"
+date:   2021-05-16 20:40:20 -0500
+categories: programming
 ---
+So like this is a test. Please let all my other files still be here when this is pushed :pray:
