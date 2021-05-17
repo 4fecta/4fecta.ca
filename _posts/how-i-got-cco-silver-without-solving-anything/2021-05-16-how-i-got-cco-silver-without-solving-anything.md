@@ -7,7 +7,6 @@ categories: programming
 I would like to preface this by saying that you should not voluntarily attempt what I did at CCO if you are serious about your results. My strategy was mainly damage control from day 1, and it was a miracle I even got silver. However, you may find my first CCO experience interesting or maybe even hilarious, which is why I am making this post. Anyways, please enjoy. 🙂
 
 ## Day 1
-<hr>
 
 ### P1. Swap Swap Sort
 
@@ -30,7 +29,6 @@ It was only here that I decided it may be a good idea to reread the statement, a
 Clearly, my strategy of tunnel visioning on problem 1 did not work out in my favour at all. Spending over 3 out of 4 hours of such an important contest for 11 points is something that would pain anyone to see, and I was quite sad over my mediocre day 1 performance. If there is one lesson to be learned out of my CCO experience this year, it would be to *read the constraints, and read them carefully*. Also, repeatedly submitting `WA` submissions or trying to fast-slow for over 30 minutes was just a waste of time, time that could have well been spent going for more partials on problem 3 or even a full solve on problem 2. Finally, it may have been wiser to try and optimize out the log factor from my code instead of spamming flimsy `pragma`s and cheeses, something that seems more than possible with 30 minutes in hindsight. Regardless, I could not redo what had already been done, and it was time to get well rested and prepare for day 2.
 
 ## Day 2
-<hr>
 
 ### Preparations
 
