@@ -6,3 +6,8 @@ categories: programming
 tag:
   - programming
 ---
+
+<figure>
+<img src="/a-soft-introduction-to-plug-dp/fig1.png" alt="figure 1">
+<figcaption>What the state represents</figcaption>
+</figure>
