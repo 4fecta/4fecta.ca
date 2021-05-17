@@ -6,7 +6,7 @@ lang: en-US # default lang
 timezone: Canada/Eastern # set your timezone
 image: assets/img/229166.png # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/4fecta/4fecta.github.io # site repo [optional]
-mode: dark # default theme "dark" | "light"
+mode: light # default theme "dark" | "light"
 
 # Profile settings
 author:
@@ -14,7 +14,7 @@ author:
   bio: >- # tell to the world
     Hi, I'm Edward, but you may know me by the handle 4fecta from various platforms. Welcome to this half-broken website that will serve as a placeholder as I learn more about web development.
   username: 4fecta # general username
-  github: github_username # github username
+  github: 4fecta # github username
   twitter: twitter_username # twitter username
   facebook: facebook_username # facebook username
   email: your-email@email.com # email adress
