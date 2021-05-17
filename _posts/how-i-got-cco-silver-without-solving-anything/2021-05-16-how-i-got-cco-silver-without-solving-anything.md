@@ -22,4 +22,6 @@ This problem was intimidating at first, with no clear idea on how to proceed. Ag
 
 ### The struggle with P1 continues
 
-It was only here that I decided it may be a good idea to reread the statement, and discovered that contrary to my belief that $$Q = 100\;000$$, the constraints actually had $$Q = 1\;000\;000$$! A quick 1 line fix to my `MQ` constant resolved the `WA` verdict, but replaced it with the ever so agonizing `TLE` instead.
+It was only here that I decided it may be a good idea to reread the statement, and discovered that contrary to my belief that $$Q = 100\;000$$, the constraints actually had $$Q = 1\;000\;000$$! A quick 1 line fix to my `MQ` constant resolved the `WA` verdict, but replaced it with the ever so agonizing `TLE` instead. As there were only 30 minutes left at this point, I decided it would be futile to search for new solutions and settled with constant optimizing my square root log. I spammed around 20 different versions of the same code with different block sizes and with/without `pragma` optimizations, but none of them made it through the last batch. In the last 10 minutes I tried to cheese the time limit by handling numbers with small frequencies separately but that was to no avail either, and the timer hit 0 with only 11 points on problem 1, a problem I dedicated over 3 hours of contest time to.
+
+
