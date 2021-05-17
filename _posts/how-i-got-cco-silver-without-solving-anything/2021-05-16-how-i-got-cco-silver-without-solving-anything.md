@@ -19,3 +19,7 @@ I had a quick glance over problem 2, but decided that the subtasks from problem 
 ### P2. Weird Numeral System
 
 This problem was intimidating at first, with no clear idea on how to proceed. Again, I was simply controlling the damage of my poor problem 1 performance here, so I was only aiming for the subtask. The subtask provided the constraint that the absolute value of any allowed digit is less than the base, which intuitively meant that any change caused by a higher base couldn't be reverted by lower bases, no matter what values we assign them. This inspired a brute force recursion in descending order of power, ensuring that the number is in the range $$ (-b^K, b^K) $$ when we are done with the $$K$$-th power (of course, $$b$$ denotes the given base here). The solution ended up running surprisingly fast (0.1 seconds), but kept getting `WA` on case 7. After around 10 minutes of debugging, I decided it was all or nothing at this point and simply slapped `__int128` into my code, which surprisingly fixed the bug and gave me the first subtask. Overall, this was around 30 minutes spent on 8 marks, which I was relatively pleased with (considering that was more than half of the points I had earned so far).
+
+### The struggle with P1 continues
+
+It was only here that I decided it may be a good idea to reread the statement, and discovered that contrary to my belief that $$Q = 100\;000$$, the constraints actually had $$Q = 1\;000\;000$$! A quick 1 line fix to my `MQ` constant resolved the `WA` verdict, but replaced it with the ever so agonizing `TLE` instead.
