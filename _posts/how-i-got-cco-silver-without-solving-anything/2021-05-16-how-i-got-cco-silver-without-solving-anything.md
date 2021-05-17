@@ -11,7 +11,7 @@ I would like to preface this by saying that you should not voluntarily attempt w
 
 ### P1. Swap Swap Sort
 
-The first fault in my approach at CCO. I had some initial ideas early on, scoring the first 2 subtasks at around 16 minutes. Over the next hour, I delevoped a solution which runs in square root log time, believing it would pass with ease due to a fatal misreading of the constraints. The solution worked well for the first three subtasks, but for some reason I couldn't figure out kept receiving a `WA` verdict on the last batch. For around another hour, I read over my code countless times and ran multiple fast-slow scripts, but simply couldn't find out where the error lied. After a gruesome 2 hour and 30 minutes on problem 1, I decided to take a peek at the rest of the problemset before it was too late (although it was already way too much time wasted).
+The first fault in my approach at CCO. I had some initial ideas early on, scoring the first 2 subtasks at around 16 minutes. Over the next hour, I developed a solution which runs in square root log time, believing it would pass with ease due to a fatal misreading of the constraints. The solution worked well for the first three subtasks, but for some reason I couldn't figure out kept receiving a `WA` verdict on the last batch. For around another hour, I read over my code countless times and ran multiple fast-slow scripts, but simply couldn't find out where the error lied. After a gruesome 2 hour and 30 minutes on problem 1, I decided to take a peek at the rest of the problemset before it was too late (although it was already way too much time wasted).
 
 ### P3. Through Another Maze Darkly
 
