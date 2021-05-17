@@ -37,3 +37,9 @@ In general, we want to transition from cell $$(i, j - 1)$$ to cell $$(i, j)$$ (i
 <img src="fig3.jpg" alt="figure 3">
 <figcaption>Going from (3, 3) to (3, 4)</figcaption>
 </figure>
+
+So how do we transition? First, we notice that if both plugs $$j-1$$ and $$j$$ are toggled from the previous state then it leads to an overlap of 2 dominoes on cell $$(i, j)$$, so we don't need to consider this case. Let's handle the other 3 cases separately.
+
+**Case 1:** none of $$j-1$$ and $$j$$ are toggled.
+
+This means that $$(i, j)$$ does not have anything covering it, so we must place one end of a domino there to cover. We can either place a horizontal domino going from $$(i, j)$$ to $$(i, j+1)$$ toggling plug $$j$$, or we can place a vertical domino going from $$(i+1, j)$$ toggling plug $$j-1$$.
