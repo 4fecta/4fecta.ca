@@ -23,3 +23,8 @@ This problem can be solved with a standard row-by-row bitmasking approach, but t
 </figure>
 
 Let's consider a concrete example to understand the concept of plug masks. Consider the diagram above, where the first two dimensions $$(i, j) = (3, 4)$$. The red line denotes the line which separates the cells we've already processed and the cells we have yet to consider. This line can be split into $$M+1$$ segments of length 1, and each of the arrows on these segments represent a plug. The plug itself can represent a variety of things, but for our purposes it represents whether we have placed a domino that crosses the plug (i.e. the two halves of the domino lie on separate sides of the plug). The plug will be $$1$$ (toggled) if there is a domino laid over it, and $$0$$ otherwise.
+
+<figure>
+<img src="fig2.jpg" alt="figure 2">
+<figcaption>An possible tiling represented by the binary mask $$101010010$$</figcaption>
+</figure>
