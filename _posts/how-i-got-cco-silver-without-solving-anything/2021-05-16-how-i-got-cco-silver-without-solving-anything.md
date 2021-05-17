@@ -52,6 +52,6 @@ After day 2, I was quite sure my tragic performance (or so I thought) on both da
 
 ## Final Thoughts
 
-This marks the conclusion of my first experience at CCO, and how I managed to earn a silver medal without even scoring full points on a single problem. It turns out that only partial farming (unintentionally) for both days can be sufficient to cross that silver cutoff, and I am glad I was able to leave the contest with a lot more experience and ideas from before. I can't say that I'm completely happy with how I did, but I am thankful that things didn't go as bad as I thought. I guess this also means I have a lot more to learn and prepare before the next wave of computing competitions. Anyways, that's it for my first blog.
+This marks the conclusion of my first experience at CCO, and how I managed to earn a silver medal without even scoring full points on a single problem. It turns out that only partial farming (unintentionally) for both days can be sufficient to cross that silver cutoff, and I am glad I was able to leave the contest with a lot more experience and ideas than before. I can't say that I'm completely happy with how I did, but I am thankful that things didn't go as bad as I thought. I guess this also means I have a lot more to learn and prepare before the next wave of computing competitions. Anyways, that's it for my first blog.
 
 Ciao 👋
