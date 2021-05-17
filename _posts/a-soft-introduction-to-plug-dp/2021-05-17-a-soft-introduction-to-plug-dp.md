@@ -56,4 +56,4 @@ And that's really all there is! Now we just need to handle some special procedur
 
 ### Going from row $$i-1$$ to row $$i$$
 
-
+If you've been following along, you may be wondering how we go from one row to the next. It turns out that all we need to do is move some values from one place to another. Specifically, when we first process row $$i$$, we will transfer all the values stored in $$dp[i - 1][M][mask]$$ to $$dp[i][0][mask << 1]$$. It may be confusing as to why we are shifting all bits to the left by 1, but the following diagram should clear things up.
