@@ -63,7 +63,7 @@ If you've been following along, you may be wondering how we go from one row to t
 <figcaption>Shifting rows</figcaption>
 </figure>
 
-As you may notice, the vertical plug $$0$$ on the next row shifts all the plug indices by 1, so we must shift all bits in the mask by 1 to compensate. Also, the vertical plugs here $$0$$ and $$M$$ should never be toggled since having a domino go outside the grid would be absurd, so we don't have to worry about the bit we lose from shifting or the new bit introduced.
+As you may notice, the vertical plug $$0$$ on the next row shifts all the plug indices by one, so we must shift all bits in the mask by one to compensate. Also, the vertical plugs here $$0$$ and $$M$$ should never be toggled since having a domino go outside the grid would be absurd, so we don't have to worry about the bit we lose from shifting or the new bit introduced.
 
 ### Final details
 
