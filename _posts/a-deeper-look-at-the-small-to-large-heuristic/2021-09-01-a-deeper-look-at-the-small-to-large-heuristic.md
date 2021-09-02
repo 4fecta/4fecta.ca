@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Deeper Look at the Small-to-Large Heuristic"
-date:   2021-09-02 19:30:13 -0500
+date:   2021-09-01 19:30:13 -0500
 categories: programming
 tag:
   - programming
