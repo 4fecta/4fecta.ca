@@ -10,6 +10,6 @@ Hey, this is Edward. Senior at the University of Toronto Schools and incoming fr
 
 <hr>
 
-Outside of doing nerdy things, I also enjoy watching anime, and I've been working on learning the Japanese language to eventually be able to read light novels (maybe that's nerdy too, but it should be known that the best plot of many series are hidden behind untranslated pages of Japanese text 😛). Chess is a fun game too. My music taste has been completely dominated [by](https://youtu.be/YnSW8ian29w) [A](https://youtu.be/sOiMD45QGLs)[d](https://youtu.be/jg09lNupc1s)[o](https://youtu.be/Qp3b-RXtz4w), so there's that I guess.
+Outside of doing nerdy things, I also enjoy watching anime and playing rhythm games (specifically プロジェクトセカイ カラフルステージ！ feat. 初音ミク). I've been working on learning the Japanese language and am now able to read light novels at a snail's pace (maybe that's nerdy too, but it should be known that the best plot of many series are hidden behind untranslated pages of Japanese text 😛). Chess is a fun game too. My music taste has been completely dominated by [ZUTOMAYO](https://youtu.be/Atvsg_zogxo), so there's that I guess.
 
 Man I love writing About pages.
