@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Pathfinder Editorial"
-date:   2022-01-04 15:42:22 -0500
+date:   2022-01-04 12:42:22 -0500
 categories: programming
 tag:
   - programming
 ---
-In order to solve this problem, you must first know at least one of the two following graph algorithms: Breadth First Search (BFS) or Depth First Search (DFS). If you are not familiar with these, I recommend clicking their links to see a quick overview on how they do what the do. With that out of the way, let’s proceed to the solution.
+In order to solve this problem, you must first know at least one of the two following graph algorithms: Breadth First Search (BFS) or Depth First Search (DFS). If you are not familiar with these, I recommend clicking their links to see a quick overview on how they do what they do. With that out of the way, let’s proceed to the solution.
 
-For the first subtask notice that the grid can have a maximum of $$2000 * 2000 = 4000000$$ cells in the grid. If we view each cell of the grid as a node and we add edges to the direct neighbours of each node, we can directly apply either BFS or DFS to the given grid. This direct application of any graph traversal algorithm has a time complexity of $$O(NM)$$. Below you can see a simple implementation of this algorithm:
+For the first subtask, notice that the grid can have a maximum of $$2000 * 2000 = 4000000$$ cells in the grid. If we view each cell of the grid as a node and we add edges to the direct neighbours of each node, we can directly apply either BFS or DFS to the given grid. This direct application of any graph traversal algorithm has a time complexity of $$O(NM)$$. Below you can see a simple implementation of this algorithm:
 
 {% highlight cpp %}
 #include <bits/stdc++.h>
