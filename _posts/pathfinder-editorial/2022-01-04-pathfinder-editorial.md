@@ -8,7 +8,7 @@ tag:
 ---
 Hi, here's a blog post I found on my old website that I decided to transfer here. The problem being discussed is [Path Finder](https://dmoj.ca/problem/pathfind), one of the problems I authored earlier in my career. Please give it a shot if you haven't already before you proceed to the solution below!
 
-In order to solve this problem, you must first know at least one of the two following graph traversal algorithms: Breadth First Search (BFS) or Depth First Search (DFS). If you are not familiar with these, I recommend doing a quick Google search to see a quick overview on how they do what they do. With that out of the way, let’s proceed to the solution.
+In order to solve this problem, you must first know at least one of the two following graph traversal algorithms: Breadth First Search (BFS) or Depth First Search (DFS). If you are not familiar with these, I recommend doing a quick Google search to see an overview on how they do what they do. With that out of the way, let’s proceed to the solution.
 
 For the first subtask, notice that there can be a maximum of $$2\,000 \times 2\,000 = 4\,000\,000$$ cells in the grid. If we view each cell of the grid as a vertex and we add edges to the orthogonal neighbours of each node, we can directly apply either BFS or DFS to the given grid. Either of these algorithms have a time complexity of $$\mathcal{O}(NM)$$. You can see a simple implementation of this algorithm below:
 
