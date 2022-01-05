@@ -62,7 +62,7 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 #define readl(_s) getline(cin, (_s));
 #define boost() cin.tie(0); cin.sync_with_stdio(0)
 
-vector<pii> dir = {{0, 1}, {1, 1}, {1, 0}, {1, -1}, {0, -1}, {-1, -1}, {-1, 0}, {-1, 1}};
+vector<pii> dir = ;
 
 const int MN = 500005;
 
