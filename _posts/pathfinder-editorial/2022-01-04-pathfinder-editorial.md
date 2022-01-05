@@ -6,7 +6,7 @@ categories: programming
 tag:
   - programming
 ---
-Hi, here's a blog post I found on my old website that I decided to transfer here. The problem being discussed is [Path Finder](https://dmoj.ca/problem/pathfind)
+Hi, here's a blog post I found on my old website that I decided to transfer here. The problem being discussed is [Path Finder](https://dmoj.ca/problem/pathfind), one of the problems I authored earlier in my career. Please give it a shot if you haven't already before you proceed to the solution below!
 
 In order to solve this problem, you must first know at least one of the two following graph algorithms: Breadth First Search (BFS) or Depth First Search (DFS). If you are not familiar with these, I recommend doing a quick Google search to see a quick overview on how they do what they do. With that out of the way, let’s proceed to the solution.
 
