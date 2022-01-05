@@ -18,7 +18,7 @@ using namespace std;
 const int MN = 2005;
 
 int n, m, k, vis[MN][MN], blocked[MN][MN];
-pair<int, int> dir[4] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+pair<int, int> dir[4] = ;
 
 void dfs(pair<int, int> cur) {
     vis[cur.first][cur.second] = 1;
