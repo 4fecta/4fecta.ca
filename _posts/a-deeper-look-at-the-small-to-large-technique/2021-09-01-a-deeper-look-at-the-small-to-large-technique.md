@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "A Deeper Look at the Small-to-Large Heuristic"
+title:  "A Deeper Look at the Small-to-Large Technique"
 date:   2021-09-01 19:30:13 -0500
 categories: programming
 tag:
   - programming
 ---
-The small-to-large heuristic is well known among the competitive programming community, but most problems that require it are straightforward applications of set merging. Here, we introduce a different way to think about the heuristic so that it may be applicable to a wider variety of problems. Consider the problem [Non-boring Sequences](https://open.kattis.com/problems/nonboringsequences). In short, the problem asks to determine whether all consecutive subsequences of a sequence $$A$$ contain a unique element (such sequences are termed "non-boring"). Surely, after a quick read, we can start to brainstorm some segment tree or other data structure based solution, but what if we try some brute force approaches as well?
+The small-to-large technique is well known among the competitive programming community, but most problems that require it are straightforward applications of set merging. Here, we introduce a different way to think about the technique so that it may be applicable to a wider variety of problems. Consider the problem [Non-boring Sequences](https://open.kattis.com/problems/nonboringsequences). In short, the problem asks to determine whether all consecutive subsequences of a sequence $$A$$ contain a unique element (such sequences are termed "non-boring"). Surely, after a quick read, we can start to brainstorm some segment tree or other data structure based solution, but what if we try some brute force approaches as well?
 
 Consider a recursive `check` function taking parameters $$l$$ and $$r$$ for whether the subsequence $$A[l, r]$$ is non-boring. For some $$i$$ in $$[l, r]$$, if $$A_i$$ is unique (the previous and next appearance of $$A_i$$ in $$A$$ occurs outside of $$[l, r]$$), then all subsequences of $$A[l, r]$$ "crossing" $$i$$ are non-boring. Thus, it suffices to check that both $$A[l, i-1]$$ and $$A[i+1, r]$$ are non-boring with a recursive call to `check` (note that we only need to recurse for one such $$i$$ if it exists, think about why this is). 
 
@@ -25,4 +25,4 @@ bool check(int l, int r) {
 }
 {% endhighlight %}
 
-In conclusion, it may be worth the time to consider seemingly brute force solutions to some problems, as long as there is a merging or unmerging process that can happen proportional to the size of the smaller set, capitalizing on the small-to-large heuristic when it seems like the last thing one could do.
+In conclusion, it may be worth the time to consider seemingly brute force solutions to some problems, as long as there is a merging or unmerging process that can happen proportional to the size of the smaller set, capitalizing on the small-to-large technique when it seems like the last thing one could do.
