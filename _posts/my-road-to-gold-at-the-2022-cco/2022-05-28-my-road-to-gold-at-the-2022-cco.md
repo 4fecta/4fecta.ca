@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My road to gold at the 2022 CCO"
-date:   2022-05-28 23:52:09 -0500
+date:   2022-05-28 12:52:09 -0500
 categories: programming
 tag:
   - programming
