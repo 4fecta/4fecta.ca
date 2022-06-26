@@ -6,7 +6,7 @@ excerpt: Hello!
 comments: false
 ---
 
-Hey, this is Edward. Incoming freshman to Carnegie Mellon University. I think my main personality trait is being a math and computer science enthusiast. You can check out some of my profiles on various websites, such as [DMOJ](https://dmoj.ca/user/4fecta) or [Codeforces](https://codeforces.com/profile/4fecta). I've been creating many competitive programming problems on DMOJ as a member of the DMOPC committee recently, and I'd love if you are interested in trying some of them out! Here's one of my personal favourites: [Ace of Diamonds](https://dmoj.ca/problem/dmopc21c9p4).
+Hey, this is Edward. Incoming freshman to Carnegie Mellon University. I think my main personality traits are split between being a computer science enthusiast and liking Konosuba. You can check out some of my profiles on various websites, such as [DMOJ](https://dmoj.ca/user/4fecta) or [Codeforces](https://codeforces.com/profile/4fecta). I've been creating many competitive programming problems on DMOJ as a member of the DMOPC committee recently, and I'd love if you are interested in trying some of them out! Here's one of my personal favourites: [Ace of Diamonds](https://dmoj.ca/problem/dmopc21c9p4).
 
 <hr>
 
