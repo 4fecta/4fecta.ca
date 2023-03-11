@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Reflecting on my journey at the IOI"
@@ -7,7 +6,6 @@ categories: programming
 tag:
   - programming
 ---
-
 The IOI was a once-in-a-lifetime event which I am extremely grateful to have had the opportunity to participate in. First and foremost, I would like to thank the Canadian leaders for their efforts in making it possible for team Canada to enjoy the full IOI experience this year in person alongside 70 other teams. As I mentioned in the previous post, this post is intended to be a comprehensive rundown and reflection of my experience at the IOI, beginning with the training camp and the journey there. I hope you enjoy!
 
 ## Training Camp
