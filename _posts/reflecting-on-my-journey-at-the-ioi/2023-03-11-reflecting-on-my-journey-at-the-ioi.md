@@ -2,7 +2,7 @@
 ---
 layout: post
 title:  "Reflecting on my journey at the IOI"
-date:   2023-03-11 06:42:12 -0500
+date:   2023-03-11 01:42:12 -0500
 categories: programming
 tag:
   - programming
