@@ -12,7 +12,7 @@ mode: light # default theme "dark" | "light"
 author:
   name: Edward Xiao # author name
   bio: >- # tell to the world
-    Hi, I'm Edward, but you may know me by the handle 4fecta from various platforms. Welcome to my website, which I use as a hub for my personal blogs. Feel free to look around!
+    Hi, I'm Edward, but you may know me by the handle 4fecta from various platforms. Welcome to my website, which I'm currently using as a hub for my personal blogs. Feel free to look around!
   username: 4fecta # general username
   github: 4fecta # github username
   twitter: twitter_username # twitter username
