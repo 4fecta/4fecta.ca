@@ -3,8 +3,8 @@
 Gem::Specification.new do |spec|
   spec.name     = "klise"
   spec.version  = "1.0.1"
-  spec.authors  = ["Mahendrata Harpi"]
-  spec.email    = ["justharpi@gmail.com"]
+  spec.authors  = ["Edward Xiao"]
+  spec.email    = ["edwardx@andrew.cmu.edu"]
 
   spec.summary  = "🏖 Klisé is a minimalist Jekyll theme for running a personal site or blog, light & dark mode support."
   spec.homepage = "https://github.com/piharpi/jekyll-klise"
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-feed', '~> 0.13'
   spec.add_runtime_dependency 'jekyll-sitemap', '~> 1.4'
   spec.add_runtime_dependency 'jekyll-compose', '~> 0.12.0'
-  spec.add_runtime_dependency 'jekyll-postfiles', '~> 3.1'
+  spec.add_runtime_dependency 'jekyll-postfiles', '~> 3.3'
 
   spec.add_development_dependency "bundler", "~> 2.1"
 end
